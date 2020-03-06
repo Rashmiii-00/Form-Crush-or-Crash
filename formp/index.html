@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hello, there!</title>
+  </head>
+  <body>
+    <div class="modal-dialog">
+      <div class="modal-content">
+  <div class="align">
+    <div class="container-fluid center-align>
+    
+        <div class="card bg bg-light" style="width: 500px;">
+          <img src="fisrt 11.png" class="card-img-top rounded mx-auto d-block" style="width:100px; height:100px">
+          <div class="card-body">
+            <h5 class="card-title text-center font-italic font-weight-bolder heading"><u>Crush OR Crash</u></h5>
+
+            <form>
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="form-group font-weight-bold">
+                          <label for="nameInput">Name</label>
+                          <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="form-group font-weight-bold">
+                      <label for="surnameInput2">Surname</label>
+                      <input type="text" class="form-control" id="surnameInput2" placeholder="Enter your surname" required>
+                    </div>
+                  </div>  
+                </div>
+
+              
+
+    
+
+              <div class="form-group font-weight-bold">
+                <label for="InputEmail1">Email address</label>
+                <input type="email" class="form-control" id="InputEmail1" placeholder="example@xyz" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+             <!--
+              <div class="form-group font-weight-bold">
+                  <label for="inputPassword5">Password</label>
+                  <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                   <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                   </small>
+              </div>
+            -->
+
+
+
+            <div class="form-group font-weight-bold">
+              <label for="psw">Password</label>
+              <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              <img class="image" src="eye.png" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();" >
+            </div>
+
+
+
+            <div>
+              <small id="message" class=" text-muted">
+              <h5><small>Password must contain:</small></h5>
+              <p id="letter" class="invalid p-input"><small>A <u>lowercase</u> letter</small></p>
+              <p id="capital" class="invalid p-input"><small>A <u>uppercase</u> letter</small></p>
+              <p id="number" class="invalid p-input"><small>A <u>number</u></small></p>
+              <p id="length" class="invalid p-input"><small>Minimum <u>8 characters</u></small></p>
+            </small>
+            </div>
+
+              
+
+
+
+              
+              
+              <div class="form-group">
+                <!--<label for="customRadioInline1">Gender</label>-->
+                <p class="font-weight-bold">Gender</p>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline1">Male</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline2">Female</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline3">Other</label>
+                </div>
+            </div>
+
+
+            <p class="font-weight-bold">Relationship Status</p>
+            <div class="form-row align-items-center">
+              <div class="col-auto my-1">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option><b>Single</b></option>
+                  <option value="1"><b>Committed</b></option>
+                  <option value="2"><b>Friend-zoned</b></option>
+                  <option value="3"><b>Bro-zoned</b></option>
+                  <option value="4"><b>Crush on someone</b></option>
+                </select>
+              </div>
+                </div>
+            
+          <br>
+           <!-- <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Stay signed in</label>
+              </div>
+              -->
+              <!--
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <!--<label class="btn btn-primary active">
+                  <button type="button"  class="btn btn-outline-primary">Stay Tuned
+                  <input type="checkbox" checked>
+                </button>
+              </div>-->
+
+            <div>
+              <button type="submit" class="btn btn-light align-self-center"><i class="fas fa-sign-in-alt"></i><b>Login</b></button>
+            </div>
+            </form>
+              
+              
+            
+            
+            <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+            
+            <!--<a href="#" class="btn btn-primary">Go somewhere</a>
+            <input type="submit" value="Submit">-->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  
+    <!--<h1>Hello, world!</h1>-->
+
+    <!-- Optional JavaScript -->
+
+    <script>
+      var myInput = document.getElementById("psw");
+      var letter = document.getElementById("letter");
+      var capital = document.getElementById("capital");
+      var number = document.getElementById("number");
+      var length = document.getElementById("length");
+      
+      // When the user clicks on the password field, show the message box
+      myInput.onfocus = function() {
+        document.getElementById("message").style.display = "block";
+      }
+      
+      // When the user clicks outside of the password field, hide the message box
+      myInput.onblur = function() {
+        document.getElementById("message").style.display = "none";
+      }
+      
+      // When the user starts to type something inside the password field
+      myInput.onkeyup = function() {
+        // Validate lowercase letters
+        var lowerCaseLetters = /[a-z]/g;
+        if(myInput.value.match(lowerCaseLetters)) {  
+          letter.classList.remove("invalid");
+          letter.classList.add("valid");
+        } else {
+          letter.classList.remove("valid");
+          letter.classList.add("invalid");
+        }
+        
+        // Validate capital letters
+        var upperCaseLetters = /[A-Z]/g;
+        if(myInput.value.match(upperCaseLetters)) {  
+          capital.classList.remove("invalid");
+          capital.classList.add("valid");
+        } else {
+          capital.classList.remove("valid");
+          capital.classList.add("invalid");
+        }
+      
+        // Validate numbers
+        var numbers = /[0-9]/g;
+        if(myInput.value.match(numbers)) {  
+          number.classList.remove("invalid");
+          number.classList.add("valid");
+        } else {
+          number.classList.remove("valid");
+          number.classList.add("invalid");
+        }
+        
+        // Validate length
+        if(myInput.value.length >= 8) {
+          length.classList.remove("invalid");
+          length.classList.add("valid");
+        } else {
+          length.classList.remove("valid");
+          length.classList.add("invalid");
+        }
+      }
+
+      function mouseoverPass(obj) {
+  var obj = document.getElementById('psw');
+  obj.type = "text";
+}
+function mouseoutPass(obj) {
+  var obj = document.getElementById('psw');
+  obj.type = "password";
+}
+      </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
